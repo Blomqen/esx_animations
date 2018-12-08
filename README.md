@@ -13,6 +13,8 @@ An edit of [esx_animations](https://github.com/ESX-Org/esx_animations), you can 
  
  - Add ```start esx_animations``` in your servers server.cfg
  
+ - Defualt key to open menu set to F3, you can edit this in client/main.lua
+ 
  - To open up the menu, if you use [esx_personmeny](https://github.com/xBlueSI/esx_personmeny/) put the code ```{label = ('Animationer'), value = 'animations'},``` in the 161th line in ../client/client.lua then add this code to the line 166
  ```
  if data.current.value == 'animations' then
