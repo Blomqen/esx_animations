@@ -286,6 +286,10 @@ end)
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(10)
+		
+		if IsControlJustReleased(0, Keys['F3']) and GetLastInputMethod(2) then
+	  	OpenAnimationsMenu()
+		end
 
 		if IsControlJustReleased(0, Keys['X']) and GetLastInputMethod(2) and not isDead then
 			ClearPedTasks(PlayerPedId())
